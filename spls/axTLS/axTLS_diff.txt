@@ -1,0 +1,5 @@
+=== New Interactions ===
+CONFIG_HTTP_HAS_AUTHORIZATION CONFIG_AXHTTPD
+CONFIG_AXHTTPD CONFIG_HTTP_HAS_CGI
+
+=== Removed Interactions ===

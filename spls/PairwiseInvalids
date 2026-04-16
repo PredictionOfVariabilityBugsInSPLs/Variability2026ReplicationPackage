@@ -1,0 +1,60 @@
+Busybox - 8
+-----------
+BB_FEATURE_LS_FILETYPES && !BB_FEATURE_LS_USERNAME (2nd degree)
+SELINUX && !FEATURE_STAT_FORMAT (2nd degree)
+FEATURE_HDPARM_HDIO_UNREGISTER_HWIF && !FEATURE_HDPARM_HDIO_SCAN_HWIF (2nd degree)
+LFS && (FEATURE_HTTPD_BASIC_AUTH || FEATURE_HTTPD_CGI) (2nd degree)
+FEATURE_LS_SORTFILES && FEATURE_LS_RECURSIVE (2nd degree)
+BUILD_LIBBUSYBOX && PIE
+BB_CP_MV && !BB_AR
+
+Linux - 27
+----------
+"AMIGA_Z2RAM && LBDAF" (2nd degree)
+"!64BIT && !KTIME_SCALAR" (2nd degree)
+"PM && BF60x" (2nd degree)
+"MODULE_UNLOAD && SMP" (2nd degree)
+"X86 && SMP" (2nd degree)
+"I2C_DESIGNWARE_PLATFORM && I2C_DESIGNWARE_PCI" (2nd degree)
+"IOSCHED_CFQ && !BLK_CGROUP" (2nd degree)
+"ARCH_OMAP3 && !PM" (2nd degree)
+"REISERFS_FS_SECURITY && !SECURITY" (2nd degree)
+"NUMA && (SMP || DEBUG_SPINLOCK || DEBUG_LOCK_ALLOC)" (2nd degree)
+"MACH_OMAP_H4 && !ARCH_OMAP2420" (2nd degree)
+"NETPOLL && !IPV6" (2nd degree)
+"IPV6 && !VLAN_8021Q" (2nd degree)
+"TWL4030_CORE && !OF_IRQ" (2nd degree)
+"TCP_MD5SIG && PREEMPT" (2nd degree)
+"EP93XX_ETH && !ZONE_DMA" (2nd degree)
+"X86 && ACPI_WMI" (2nd degree)
+"S390 && S390_PRNG" (2nd degree)
+"REGULATOR_MAX8660 && !OF" (2nd degree)
+"BCM47XX && !SSB_DRIVER_EXTIF" (2nd degree)
+"(SND_FSI_AK4642 || SND_FSI_DA7210) && !I2C" (2nd degree)
+"UNIX98_PTYS && DEVPTS_MULTIPLE_INSTANCES" (2nd degree)
+"VORTEX && !PCI" (2nd degree)
+"CRYPTO_TEST && !CRYPTO_BLKCIPHER" (2nd degree)
+
+Apache - 5
+----------
+"APR_HAS_LDAP && APR_HAS_LDAP_NETSCAPE_SSL" (2nd degree)
+"APU_HAS_LDAP && APR_HAS_SHARED_MEMORY" (2nd degree)
+"__STDC_VERSION__ >= 199901L && APLOG_MAX_LOGLEVEL" (2nd degree)
+"CROSS_COMPILE && (WIN32 || OS2)" (2nd degree)
+
+Marlin - 6
+----------
+"BABYSTEPPING && DELTA" (2nd degree)
+"!DISABLE_M503 && MESH_BED_LEVELING" (2nd degree)
+"AUTO_BED_LEVELING && !AUTO_BED_LEVELING_GRID" (2nd degree)
+"!ULTRA_LCD && SDSUPPORT" (2nd degree)
+"PIDTEMP && PID_DEBUG" (2nd degree)
+"THERMAL_RUNAWAY_PROTECTION_PERIOD && THERMAL_RUNAWAY_PROTECTION_PERIOD > 0" (2nd degree)
+
+JHipster - 6
+------------
+"MongoDB & SocialLogin" (2nd degree)
+"MariaDB & Gradle" (2nd degree)
+"UAA & Docker" ??
+"UAA & !Docker" ??
+
